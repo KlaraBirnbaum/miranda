@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 15px;
+    color: white;
+}
+
+/*      NAVBAR          */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(59, 59, 59);
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.navbar__nav {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+.navbar__nav > a {
+    text-decoration: none;
+    color: grey;
+}
+
+#currency {
+    background-color: rgb(59, 59, 59);
+}
+
+    /*      HEADER      */
+.header {
+    height: 30rem;
+    background-color: rgb(248, 248, 248);
+    display:flex;
+    flex-direction: row;
+    align-items: space-between;
+    margin-bottom: 35px;
+    background-repeat: no-repeat;
+}
+
+.menPicture {
+    background-image: url('img/man1.png');
+    background-repeat: no-repeat;
+}
+
+.womenPicture {
+    background-image: url('img/woman1.png');
+    background-repeat: no-repeat;
+}
+
+.activeLink {
+    color: blue;
+}
+
+.header__nav {
+    display:flex;
+    flex-direction: row;
+    width: 70%;
+    margin-left: 15rem;
+    justify-content: space-evenly;
+}
+
+.search {
+    height: 20px;
+}
+
+.header__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    font-size: 13px;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.header__links > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+    color: rgb(44, 43, 43);
+}
+
+.header__nav {
+    padding-top: 40px;
+}
+
+.logo {
+    color: black;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 24px;
+    padding-top: 40px;
+}
+
+.logo > span {
+    font-weight: bold;
+}
+
+.cart {
+    background-color: rgb(0,200,200);
+}
+
+.offer-onclick {
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 150px;
+}
+
+.hidden {
+    display: none;
+}
+
+    /*      MAIN    */
+
+main {
+    border-top: 1px solid rgb(248, 248, 248);
+}
+
+.main__offers {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 30px 0;
+}
+
+.main__offers > a {
+    text-decoration: none;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 13px;
+    padding: 0px 25px;
+    color: rgb(114, 114, 114);
+}
+
+
+    /*      DISPLAY PRODUCTS    */
+.display__products {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 80%;
+}
+.products__section1, .products__section2{
+    display: flex;
+    flex-direction: column;
+}
+
+.section1__row1, .section2__row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.small {
+    width: 100%;
+    max-width: 414px;
+    height: auto;
+}
+
+.big {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img :hover {
+    box-shadow: 3px 3px 2px 2px #ccc;
+}
+
+    /*  LOWER SECTION   */
+.lower__section-main {
+    display:flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.lower__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 30%;
+    background-color: rgb(248, 248, 248);
+    margin-right: 20px;
+}
+
+.lower__section-img {
+    width: 100%;
+    max-width: 200px;
+    min-width: 100px;
+}
+
+.lower__section > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(114, 114, 114); 
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.textarea > p {
+    padding: 40px 20px 0px;
+}
+
+.textarea > button {
+    width: 155px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.textarea > button:hover {
+    color: white;
+    background-color: rgb(0,200,200);
+    cursor: pointer;
+    border: none;
+}
+
+ .bold {
+    font-weight: 600;
+}
+
+    /*  FOOTER      */
+.footer__section {
+    background-color: rgb(248,248,248);
+    margin-top: 40px;
+}
+
+.footers {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    color: rgb(114, 114, 114);
+    font-size: 11px;
+    font-family: 'Montserrat', 'sans-serif';
+    width: 50%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer > h5 {
+    padding-bottom: 10px;
+    color: rgb(87,81,84);
+    font-size: 13px;
+
+}
+
+.footer > p {
+    padding-bottom: 5px;
+}
+
+.footer > a {
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.award {
+    background-color: rgb(51,51,51);
+    width: 40%;
+    height: 80px;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.socials {
+    background-color: rgb(0,200,200);
+    width: 40%;
+    margin-bottom: 30px;
+    height: 80px;
+    text-align: center;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+    /*  FOOTER  */
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(51,51,51);
+}
+
+@media screen and (max-width: 1045px) {
+    .footers{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .lower__section-main {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 885px) {
+
+    .header__nav {
+        margin-left: 2rem;
+    }
+
+    .footers{
+        width: 90%;
+    }
+
+    .lower__section-main {
+        margin: 50px 5px 400px 5px;
+    }
+
+    .lower__section {
+        width: 200px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .search {
+        width: 200px;
+    }
+}
+
+    /*  MOBILE VERSION  */
+.hidden {
+    visibility: none;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    .hidden {
+        display: inline-block;
+    }
+    
+    .header__links {
+        position: absolute;
+        left: 0px;
+        height: 20vh;
+        width: 100vw;
+        top: -80px;
+        padding-top: 30px;
+        background-color: rgb(59, 59, 59);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-100%);
+        transition: transform 0.2s ease-in;
+    }
+
+    .header__links > a {
+        color: white;
+    }
+}
+
+.nav-active {
+    transform: translateY(80%);
+}
+
+.menu {
+    color: black;
+}
